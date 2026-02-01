@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db_mensageria
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: FuscaAzul
+      MYSQL_DATABASE: DBMensageria
+      MYSQL_USER: DevMatheus
+      MYSQL_PASSWORD: FuscaAzul
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_mensageria
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: DevMatheus
+      RABBITMQ_DEFAULT_PASS: FuscaAzul
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  mysql_data:
+  rabbitmq_data:

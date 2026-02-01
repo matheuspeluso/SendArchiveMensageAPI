@@ -1,0 +1,79 @@
+## ================================
+## .NET / ASP.NET Core
+## ================================
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# Publish output
+publish/
+wwwroot/lib/
+
+# Rider / Visual Studio / VS Code
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vsconfig
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# Secrets
+secrets.json
+*.pfx
+*.key
+
+# EF Core
+Migrations/*_Snapshot.cs
+Migrations/*.Designer.cs
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test results
+TestResults/
+coverage/
+coverage.cobertura.xml
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile.user
+**/.docker/
+
+# Node / Front-end (caso use Angular/React junto)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup / temporários
+*.bak
+*.tmp
+*.swp
+*.old
+
+# Arquivos gerados automaticamente
+*.cache
+*.generated
