@@ -1,5 +1,5 @@
 ﻿using Mensageria.Domain.Entities;
-using Mensageria.Domain.Interfaces;
+using Mensageria.Domain.Interfaces.Repositories;
 using Mensageria.InfraData.Contexts;
 using System;
 using System.Collections.Generic;

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mensageria.Domain\Mensageria.Domain.csproj" />
+    <ProjectReference Include="..\Mensageria.Infra.Message\Mensageria.Infra.Message.csproj" />
     <ProjectReference Include="..\Mensageria.InfraData\Mensageria.InfraData.csproj" />
   </ItemGroup>
 

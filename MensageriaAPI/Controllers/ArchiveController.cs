@@ -1,5 +1,5 @@
 ﻿using Mensageria.Domain.Dtos;
-using Mensageria.Domain.Interfaces;
+using Mensageria.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,11 +30,11 @@ namespace MensageriaAPI.Controllers
         }
 
         [HttpGet("GetById/{id}")]
-        public IActionResult GetArchiveById(Guid id)
+        public IActionResult GetArchiveById(Guid id, string email)
         {
             try
             {
-               return Ok(_archiveServices.GetArchiveBydId(id));
+               return Ok(_archiveServices.GetArchiveBydId(id, email));
             }
             catch (ApplicationException e)
             {

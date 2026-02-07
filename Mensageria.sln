@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensageriaAPI", "MensageriaAPI\MensageriaAPI.csproj", "{B66E5CEA-AA56-477E-B9A2-63176BA0B5DC}"
 EndProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensageria.Domain", "Mensageria.Domain\Mensageria.Domain.csproj", "{9C7AC074-B044-45F0-A092-D0AC039B68A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensageria.InfraData", "Mensageria.InfraData\Mensageria.InfraData.csproj", "{463EC0D8-D466-488A-9969-E7A0CA7D04AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensageria.Infra.Message", "Mensageria.Infra.Message\Mensageria.Infra.Message.csproj", "{07B9BD88-B0A5-401C-B37B-2DEC881A9917}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{463EC0D8-D466-488A-9969-E7A0CA7D04AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{463EC0D8-D466-488A-9969-E7A0CA7D04AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{463EC0D8-D466-488A-9969-E7A0CA7D04AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B9BD88-B0A5-401C-B37B-2DEC881A9917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B9BD88-B0A5-401C-B37B-2DEC881A9917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B9BD88-B0A5-401C-B37B-2DEC881A9917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B9BD88-B0A5-401C-B37B-2DEC881A9917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

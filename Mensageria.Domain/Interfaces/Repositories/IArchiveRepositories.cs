@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mensageria.Domain.Interfaces
+namespace Mensageria.Domain.Interfaces.Repositories
 {
     public interface IArchiveRepositories
     {

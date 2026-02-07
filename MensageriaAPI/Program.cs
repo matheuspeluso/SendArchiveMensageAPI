@@ -1,5 +1,8 @@
-using Mensageria.Domain.Interfaces;
+using Mensageria.Domain.Interfaces.Messages;
+using Mensageria.Domain.Interfaces.Repositories;
+using Mensageria.Domain.Interfaces.Services;
 using Mensageria.Domain.Services;
+using Mensageria.Infra.Message.Publishers;
 using Mensageria.InfraData.Contexts;
 using Mensageria.InfraData.Repositories;
 
@@ -14,6 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IArchiveRepositories, ArchiveRepositories>();
 builder.Services.AddTransient<IArchiveServices, ArchiveServices>();
+builder.Services.AddTransient<ISendArchiveMessage, SendArchivePublisher>();
 
 //context
 builder.Services.AddDbContext<DataContext>();
