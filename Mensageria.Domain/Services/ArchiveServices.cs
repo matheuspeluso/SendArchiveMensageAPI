@@ -38,5 +38,18 @@ namespace Mensageria.Domain.Services
             };
 
         }
+
+        public ArchiveResponseDto GetArchiveBydId(Guid Id)
+        {
+            var archive = _archiveRepositories.GetById(Id);
+
+            return new ArchiveResponseDto
+            {
+                Id = archive.Id,
+                Name = archive.Name,
+                Type = archive.Type,
+                Content = archive.Content
+            };
+        }
     }
 }

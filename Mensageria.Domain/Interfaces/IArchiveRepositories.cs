@@ -10,5 +10,6 @@ namespace Mensageria.Domain.Interfaces
     public interface IArchiveRepositories
     {
         Archive Create(Archive archive);
+        Archive GetById(Guid Id);
     }
 }

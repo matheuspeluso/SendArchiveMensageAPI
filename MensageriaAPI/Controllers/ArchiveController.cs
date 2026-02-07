@@ -29,5 +29,23 @@ namespace MensageriaAPI.Controllers
             }
         }
 
+        [HttpGet("GetById/{id}")]
+        public IActionResult GetArchiveById(Guid id)
+        {
+            try
+            {
+               return Ok(_archiveServices.GetArchiveBydId(id));
+            }
+            catch (ApplicationException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch(Exception e)
+            {
+                return StatusCode(500, 
+                    new { message = "Erro ao consultar arquivo.", exception = e.Message });
+            }
+        }
+
     }
 }

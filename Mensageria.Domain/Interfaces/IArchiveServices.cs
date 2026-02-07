@@ -11,5 +11,6 @@ namespace Mensageria.Domain.Interfaces
     public interface IArchiveServices
     {
         ArchiveResponseDto CreateArchive(ArchiveRequestDto archiveDto);
+        ArchiveResponseDto GetArchiveBydId(Guid Id);
     }
 }

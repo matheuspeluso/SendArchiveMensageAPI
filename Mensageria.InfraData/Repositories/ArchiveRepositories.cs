@@ -24,5 +24,17 @@ namespace Mensageria.InfraData.Repositories
             _context.SaveChanges();
             return archive;
         }
+
+        public Archive GetById(Guid Id)
+        {
+            var archive = _context.Set<Archive>().Where(a=> a.Id == Id)
+                .FirstOrDefault();
+
+            if(archive is null)
+                throw new ApplicationException("Arquivo não encontrado");
+
+            return archive;
+            
+        }
     }
 }
