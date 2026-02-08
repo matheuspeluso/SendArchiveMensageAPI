@@ -3,6 +3,7 @@ using Mensageria.Domain.Interfaces.Repositories;
 using Mensageria.Domain.Interfaces.Services;
 using Mensageria.Domain.Services;
 using Mensageria.Infra.Message.Publishers;
+using Mensageria.Infra.Message.Workers;
 using Mensageria.InfraData.Contexts;
 using Mensageria.InfraData.Repositories;
 
@@ -18,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IArchiveRepositories, ArchiveRepositories>();
 builder.Services.AddTransient<IArchiveServices, ArchiveServices>();
 builder.Services.AddTransient<ISendArchiveMessage, SendArchivePublisher>();
+builder.Services.AddHostedService<SendArchiveWorker>();
 
 //context
 builder.Services.AddDbContext<DataContext>();
