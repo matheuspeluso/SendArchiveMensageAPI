@@ -29,6 +29,14 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
 
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog_mensageria
+    restart: always
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Web UI
+
 volumes:
   mysql_data:
   rabbitmq_data:
